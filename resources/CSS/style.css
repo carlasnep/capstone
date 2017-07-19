@@ -1,1 +1,35 @@
+html {
+  font-family: sans-serif;
+}
 
+h5 {
+  font-weight: bold;
+}
+
+h5 span {
+  color: grey;
+}
+
+header {
+  display: flex;
+  border: solid 3px blue;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+display: inline-flex;
+border: solid 2px red;
+align-items: center;
+margin-left: 24px;
+}
+
+.menu {
+  border: solid 2px green;
+  display: flex;
+}
+
+.menu li {
+  padding: 8px;
+}
