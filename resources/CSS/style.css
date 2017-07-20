@@ -89,6 +89,7 @@ margin-left: 24px;
 .container {
   display: flex;
   border: red 2px solid;
+  margin-bottom: 32px;
 }
 
 .info-container {
@@ -134,4 +135,40 @@ margin-left: 24px;
 
 .infobox.grey {
   background-color: lightgrey;
+}
+
+/*Courses*/
+
+.title {
+background-color: lightgrey;
+padding-top: 32px;
+padding-bottom: 16px;
+text-align: center;
+}
+
+.course-container {
+  display: flex;
+  width: 100%;
+  background-color: lightgrey;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.coursebox {
+  background-color: white;
+  margin: 16px;
+  padding-bottom: 24px;
+  flex: 1 1 0;
+}
+
+.coursebox img {
+  width: 100%;
+}
+
+.coursebox h5 {
+  padding: 16px;
+}
+
+.coursebox p {
+  padding: 8px 16px;
 }
