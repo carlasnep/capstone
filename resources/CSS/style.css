@@ -66,6 +66,29 @@ margin-left: 24px;
   padding: 8px;
 }
 
+.menu-mobi {
+  display: none;
+}
+
+/* ruleset for < 480px */
+
+@media only screen and (max-width: 480px) {
+.menu,
+.logo h5 {
+  display: none;
+}
+
+.menu-mobi {
+  border: solid 2px green;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+header {
+  height: 64px;
+}
+}
+
 /*banner*/
 
 .banner {
@@ -95,6 +118,38 @@ margin-left: 24px;
   background-color: grey;
   padding-top: 8px;
   padding-bottom: 8px;
+  color: white;
+}
+
+
+/* ruleset for < 480px */
+
+@media only screen and (max-width: 480px) {
+
+.banner img {
+  display: none;
+}
+
+.extrabanner {
+  height: 180px;
+  background-color: grey;
+  display: block;
+}
+
+.banner {
+  background-color: lightgrey;
+  display: block;
+  padding: 0px;
+}
+
+.payoff {
+  padding: 32px 16px;
+}
+
+.payoff h5 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
 }
 
 /* information*/
@@ -149,6 +204,38 @@ margin-left: 24px;
   background-color: lightgrey;
 }
 
+.mobi {
+  display: none;
+}
+
+/* ruleset for < 480px */
+
+@media only screen and (max-width: 480px) {
+
+.container {
+  display: none;
+  }
+
+.mobi {
+  display: block;
+  padding: 16px;
+}
+
+.mobi img {
+  width: 100%;
+  padding-top: 16px;
+}
+
+.mobi h5, a {
+  padding: 16px 16px 0px 16px;
+}
+
+.mobi p {
+  margin: 16px;
+}
+
+}
+
 /*Courses*/
 
 .title.course {
@@ -182,6 +269,37 @@ margin-left: 24px;
   padding: 8px 16px;
 }
 
+.course-container-mobi {
+  display: none;
+}
+
+/* ruleset for < 480px */
+
+@media only screen and (max-width: 480px) {
+
+.course-container{
+  display: none;
+}
+
+.title,
+.title.course {
+  background-color: white;
+  padding: 32px 16px 0px 16px;
+}
+
+.course-container-mobi {
+  display: block;
+  margin: 16px;
+}
+
+.course-container-mobi h5 {
+  background-color: lightgrey;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+}
+
 /*thesis exhibit*/
 
 .thesis-movie {
@@ -196,10 +314,25 @@ margin-left: 24px;
   flex-direction: column;
 }
 
+.movie-mobi {
+  display: none;
+}
+
+/* ruleset for < 480px */
+
+@media only screen and (max-width: 480px) {
+
+.movie-mobi {
+  display: block;
+  margin: 32px 0px 24px 0px;
+}
+
+}
 /*footer*/
 
 footer {
   padding-left: 24px;
+  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   border: blue 2 px solid;
@@ -207,4 +340,17 @@ footer {
 
 .terms a{
   padding-right: 24px;
+}
+
+/* ruleset for < 480px */
+
+@media only screen and (max-width: 480px) {
+
+.terms {
+  display: none;
+}
+
+footer {
+  padding: 16px;
+}
 }
