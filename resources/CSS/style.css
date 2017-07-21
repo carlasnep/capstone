@@ -11,6 +11,11 @@ h1 {
   line-height: 1.4;
 }
 
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
 h3 {
   font-size: 1.4rem;
 }
@@ -19,6 +24,13 @@ h5 {
   font-size: 1.1rem;
   line-height: 1.4;
 }
+
+.title {
+padding-top: 32px;
+padding-bottom: 16px;
+text-align: center;
+}
+
 
 /* header */
 
@@ -88,7 +100,7 @@ margin-left: 24px;
 /* information*/
 .container {
   display: flex;
-  border: red 2px solid;
+  border: black 2px solid;
   margin-bottom: 32px;
 }
 
@@ -139,11 +151,8 @@ margin-left: 24px;
 
 /*Courses*/
 
-.title {
-background-color: lightgrey;
-padding-top: 32px;
-padding-bottom: 16px;
-text-align: center;
+.title.course {
+  background-color: lightgrey;
 }
 
 .course-container {
@@ -171,4 +180,31 @@ text-align: center;
 
 .coursebox p {
   padding: 8px 16px;
+}
+
+/*thesis exhibit*/
+
+.thesis-movie {
+  border: green 2px solid;
+  padding: 32px 24px;
+  width: 60%;
+  display: inline-block;
+}
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*footer*/
+
+footer {
+  padding-left: 24px;
+  display: flex;
+  justify-content: space-between;
+  border: blue 2 px solid;
+}
+
+.terms a{
+  padding-right: 24px;
 }
