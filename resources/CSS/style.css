@@ -1,34 +1,33 @@
 /* Universal Styles */
 
 html {
-  font-family: sans-serif;
-  font-size: 16px;
+  Font-Family: 'Lato', Sans-Serif;
+  Font-Size: 16px;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 44px;
   line-height: 1.4;
+  padding-top: 36px;
 }
 
 h2 {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.4rem;
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 34px;
+  line-height: 1.2;
 }
 
 h5 {
-  font-size: 1.1rem;
-  line-height: 1.4;
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 20px;
+  line-height: 1.2;
 }
 
 .title {
-padding-top: 32px;
-padding-bottom: 16px;
-text-align: center;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  text-align: center;
 }
 
 
@@ -44,21 +43,18 @@ h5 span {
 
 header {
   display: flex;
-  border: solid 3px blue;
   height: 64px;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-display: inline-flex;
-border: solid 2px red;
-align-items: center;
-margin-left: 24px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
 }
 
 .menu {
-  border: solid 2px green;
   display: flex;
 }
 
@@ -70,19 +66,18 @@ margin-left: 24px;
   display: none;
 }
 
-/* ruleset for < 480px */
+/* ruleset for < 680px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 .menu,
 .logo h5 {
   display: none;
 }
 
 .menu-mobi {
-  border: solid 2px green;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 70%;
 }
 header {
   height: 64px;
@@ -92,7 +87,7 @@ header {
 /*banner*/
 
 .banner {
-  background-color: lightgrey;
+  background-color: rgba(26, 45, 86, .5);
   display: flex;
   padding: 32px 24px;
   }
@@ -115,16 +110,17 @@ header {
 .payoff .button {
   display: flex;
   justify-content: center;
-  background-color: grey;
+  background-color: rgba(26, 45, 86, 1);
+  margin-top: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
-  color: white;
+  color: lightgrey;
 }
 
 
-/* ruleset for < 480px */
+/* ruleset for < 680px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 
 .banner img {
   display: none;
@@ -132,12 +128,12 @@ header {
 
 .extrabanner {
   height: 180px;
-  background-color: grey;
+  background-color: rgba(26, 45, 86, 1);
   display: block;
 }
 
 .banner {
-  background-color: lightgrey;
+  background-color: rgba(26, 45, 86, .5);
   display: block;
   padding: 0px;
 }
@@ -153,9 +149,9 @@ header {
 }
 
 /* information*/
+
 .container {
   display: flex;
-  border: black 2px solid;
   margin-bottom: 32px;
 }
 
@@ -165,7 +161,6 @@ header {
 }
 
 .info {
-  border: green 2px solid;
   padding: 32px 24px;
   width: 60%;
   display: inline-block;
@@ -176,12 +171,16 @@ header {
   width: 100%;
 }
 
+.general-info h2 {
+  padding: 16px 0px;
+}
+
 .infobox {
   display: flex;
   width: 423px;
   align-items: center;
   padding: 16px;
-  border: blue 2px solid;
+  border-bottom: rgba(26, 45, 86, .5) 1px solid;
 }
 
 .infobox img {
@@ -201,16 +200,31 @@ header {
 }
 
 .infobox.grey {
-  background-color: lightgrey;
+  background-color: rgba(26, 45, 86, .15);
 }
 
 .mobi {
   display: none;
 }
 
-/* ruleset for < 480px */
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid rgba(26, 45, 86, .5);
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
-@media only screen and (max-width: 480px) {
+a:hover, a:active {
+    background-color: rgba(26, 45, 86, .5);
+    color: white;
+}
+
+/* ruleset for < 680px */
+
+@media only screen and (max-width: 680px) {
 
 .container {
   display: none;
@@ -239,13 +253,13 @@ header {
 /*Courses*/
 
 .title.course {
-  background-color: lightgrey;
+  background-color: rgba(26, 45, 86, .5);
 }
 
 .course-container {
   display: flex;
   width: 100%;
-  background-color: lightgrey;
+  background-color: rgba(26, 45, 86, .5);
   justify-content: space-between;
   padding-bottom: 32px;
 }
@@ -273,9 +287,9 @@ header {
   display: none;
 }
 
-/* ruleset for < 480px */
+/* ruleset for < 680px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 
 .course-container{
   display: none;
@@ -303,10 +317,13 @@ header {
 /*thesis exhibit*/
 
 .thesis-movie {
-  border: green 2px solid;
   padding: 32px 24px;
   width: 60%;
   display: inline-block;
+}
+
+.thesis-movie h5 {
+  padding: 16px 0px;
 }
 
 .thesis-container {
@@ -318,9 +335,9 @@ header {
   display: none;
 }
 
-/* ruleset for < 480px */
+/* ruleset for < 680px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 
 .movie-mobi {
   display: block;
@@ -342,9 +359,9 @@ footer {
   padding-right: 24px;
 }
 
-/* ruleset for < 480px */
+/* ruleset for < 680px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 
 .terms {
   display: none;
@@ -352,5 +369,6 @@ footer {
 
 footer {
   padding: 16px;
+
 }
 }
