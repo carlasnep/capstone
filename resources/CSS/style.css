@@ -35,6 +35,21 @@ video {
   height: auto;
 }
 
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid rgba(26, 45, 86, .5);
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: rgba(26, 45, 86, .5);
+    color: white;
+}
+
 /* header */
 
 header h5 {
@@ -162,6 +177,7 @@ header {
 .info-container {
   display: flex;
   flex-direction: column;
+  margin-top: 18px;
 }
 
 .info {
@@ -173,6 +189,12 @@ header {
 .info img,
 .general-info {
   width: 100%;
+}
+
+.info .title {
+  display: block;
+  font-style: italic;
+  text-align: left;
 }
 
 .general-info h2 {
@@ -211,20 +233,6 @@ header {
   display: none;
 }
 
-a:link, a:visited {
-    background-color: white;
-    color: black;
-    border-bottom: 1px solid rgba(26, 45, 86, .5);
-    padding: 10px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a:hover, a:active {
-    background-color: rgba(26, 45, 86, .5);
-    color: white;
-}
 
 /* ruleset for < 680px */
 
